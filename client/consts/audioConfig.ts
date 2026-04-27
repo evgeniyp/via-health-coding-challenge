@@ -24,7 +24,7 @@ export const RECORDER_OPTIONS: MediaRecorderOptions = {
 export const MP3_BITRATE_KBPS = 64;
 
 // Memory budget sized for 4 hours at current bitrate: 4 * 3600 * RECORDING_BYTES_PER_SEC.
-export const MEMORY_BUDGET_BYTES = 10 * RECORDING_BYTES_PER_SEC; // ~220 MB
+export const MEMORY_BUDGET_BYTES = 4 * 3600 * RECORDING_BYTES_PER_SEC; // ~220 MB
 
 // How often MediaRecorder fires ondataavailable during recording.
 // Drives real-time usage updates; also determines chunk granularity.
